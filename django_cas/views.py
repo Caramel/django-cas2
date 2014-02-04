@@ -5,8 +5,8 @@ from django.contrib import auth
 from django.core.exceptions import PermissionDenied
 from django.http import HttpResponseRedirect, HttpResponse, Http404
 from django_cas.models import PgtIOU, SessionServiceTicket
-from urllib import urlencode
-from urlparse import urljoin
+from django.utils.http import urlencode
+from django.utils.six.moves.urllib.parse import urljoin
 from xml.dom import minidom
 import logging
 import types

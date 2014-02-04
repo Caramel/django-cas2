@@ -12,7 +12,7 @@ from django.db.models.signals import post_save, post_delete
 from django.dispatch.dispatcher import receiver
 from django.utils.translation import ugettext_lazy as _
 from django_cas.exceptions import CasTicketException
-from urlparse import urljoin
+from django.utils.six.moves.urllib.parse import urljoin
 from xml.dom import minidom
 import requests
 
